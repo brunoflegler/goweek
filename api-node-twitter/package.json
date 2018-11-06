@@ -1,0 +1,33 @@
+{
+  "name": "api-node-twitter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
+    "build": "rimraf dist && babel src -s -D -d dist --presets env",
+    "start": "node dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9",
+    "socket.io": "^2.1.1"
+  }
+}
