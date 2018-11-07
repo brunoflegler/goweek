@@ -2,7 +2,6 @@ import Tweet from '../models/Tweet'
 
 export const create = async (req, res) => {
   const tweet = await Tweet.create(req.body)
-
   req.io.emit('tweet', tweet)
 
   return res.json(tweet)
