@@ -19,4 +19,4 @@ app.use((req, res, next) => {
 // routes
 app.use('/api', TweetRouter)
 
-export default app
+export default server

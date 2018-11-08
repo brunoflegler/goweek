@@ -8,8 +8,9 @@ export const likes = async (req, res) => {
   })
 
   await tweet.save()
-
   req.io.emit('like', tweet)
+
+  console.log('like')
 
   return res.json(tweet)
 }
